@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Clarice D. Aiello</title>
+    <link>https://web.stanford.edu/~caiello/talk/</link>
+    <description>Recent content in Talks on Clarice D. Aiello</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Clarice D. Aiello.</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://web.stanford.edu/~caiello/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Catodoluminescence-based nanothermometry with $\sim$ 30 mK precision</title>
+      <link>https://web.stanford.edu/~caiello/talk/cathodoluminescence-mediated-thermometry/</link>
+      <pubDate>Thu, 16 Mar 2017 00:00:00 -0700</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/cathodoluminescence-mediated-thermometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M.Phil. thesis: Photonic devices for quantum information processing</title>
+      <link>https://web.stanford.edu/~caiello/talk/m.phil-defense/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/m.phil-defense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Magnetic sensing with a single spin in diamond</title>
+      <link>https://web.stanford.edu/~caiello/talk/risingstarsnse/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/risingstarsnse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoscale biology with cathodoluminescence-activated imaging</title>
+      <link>https://web.stanford.edu/~caiello/talk/investigating-biological-processes/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/investigating-biological-processes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ph.D. thesis: Qubit dynamics under alternating controls</title>
+      <link>https://web.stanford.edu/~caiello/talk/ph.d.-thesis-defense/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/ph.d.-thesis-defense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unraveling in vivo magnetosensing</title>
+      <link>https://web.stanford.edu/~caiello/talk/unraveling-in-vivo/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://web.stanford.edu/~caiello/talk/unraveling-in-vivo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

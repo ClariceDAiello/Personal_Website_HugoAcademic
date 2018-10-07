@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Clarice D. Aiello">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="The sensitivity of quantum magnetometers is challenged by control errors and, especially in the solid state, by their short coherence times. Refocusing techniques can overcome these limitations and improve the sensitivity to periodic fields, but they come at the cost of reduced bandwidth and cannot be applied to sense static or aperiodic fields. &lt;/br&gt; &lt;/br&gt;Here we experimentally demonstrate that continuous driving of the sensor spin by a composite pulse known as rotary-echo yields a flexible magnetometry scheme, mitigating both driving power imperfections and decoherence. A suitable choice of rotary-echo parameters compensates for different scenarios of noise strength and origin. The method can be applied to nanoscale sensing in variable environments or to realize noise spectroscopy. &lt;/br&gt;&lt;/br&gt;In a room-temperature implementation, based on a single electronic spin in diamond, composite-pulse magnetometry provides a tunable trade-off between sensitivities in the $\mu$THz$^{−1/2}$ range, comparable with those obtained with Ramsey spectroscopy, and coherence times approaching T$\_1$. &lt;/br&gt;">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://web.stanford.edu/~caiello/publication/composite-pulse-magnetometry/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/~caiello/styles.css">
+  
+  <link rel="stylesheet" href="/~caiello/css/yellow.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="https://web.stanford.edu/~caiello/index.xml" type="application/rss+xml" title="Clarice D. Aiello">
+  <link rel="feed" href="https://web.stanford.edu/~caiello/index.xml" type="application/rss+xml" title="Clarice D. Aiello">
+  
+
+  <link rel="manifest" href="/~caiello/site.webmanifest">
+  <link rel="icon" type="image/gif" href="/~caiello/img/cla_filter_round.gif">
+ 
+  <link rel="apple-touch-icon" type="image/png" href="/~caiello/img/cla_filter_round.gif">
+
+  <link rel="canonical" href="https://web.stanford.edu/~caiello/publication/composite-pulse-magnetometry/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/ClariceDAiello">
+  <meta property="twitter:creator" content="@https://twitter.com/ClariceDAiello">
+  
+  <meta property="og:site_name" content="Clarice D. Aiello">
+  <meta property="og:url" content="https://web.stanford.edu/~caiello/publication/composite-pulse-magnetometry/">
+  <meta property="og:title" content="Composite-pulse magnetometry with a solid-state quantum sensor | Clarice D. Aiello">
+  <meta property="og:description" content="The sensitivity of quantum magnetometers is challenged by control errors and, especially in the solid state, by their short coherence times. Refocusing techniques can overcome these limitations and improve the sensitivity to periodic fields, but they come at the cost of reduced bandwidth and cannot be applied to sense static or aperiodic fields. &lt;/br&gt; &lt;/br&gt;Here we experimentally demonstrate that continuous driving of the sensor spin by a composite pulse known as rotary-echo yields a flexible magnetometry scheme, mitigating both driving power imperfections and decoherence. A suitable choice of rotary-echo parameters compensates for different scenarios of noise strength and origin. The method can be applied to nanoscale sensing in variable environments or to realize noise spectroscopy. &lt;/br&gt;&lt;/br&gt;In a room-temperature implementation, based on a single electronic spin in diamond, composite-pulse magnetometry provides a tunable trade-off between sensitivities in the $\mu$THz$^{−1/2}$ range, comparable with those obtained with Ramsey spectroscopy, and coherence times approaching T$\_1$. &lt;/br&gt;"><meta property="og:image" content="https://web.stanford.edu/~caiello/img/ncomms2375.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2013-01-01T00:00:00-08:00">
+  
+  <meta property="article:modified_time" content="2013-01-01T00:00:00-08:00">
+  
+
+  
+  
+
+  <title>Composite-pulse magnetometry with a solid-state quantum sensor | Clarice D. Aiello</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/~caiello/">Clarice D. Aiello</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#talks">
+            
+            <span>Slides</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#awards">
+            
+            <span>Awards</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#teaching-and-mentoring">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#leadership-and-service">
+            
+            <span>Leadership</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#outreach">
+            
+            <span>Outreach</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#non-academic-interests">
+            
+            <span>Play</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/~caiello/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+<div class="article-header">
+  
+  
+    <img src="/~caiello/img/ncomms2375.png" class="article-banner" itemprop="image" style="width:50%;">
+  
+
+  <div class="center-block" style="text-align: left;padding-top: 0.5em;width: 50%;text-indent: -10px;"><span class="article-header-caption">We demonstrated that a control sequence known as “rotary-echo” might dynamically mitigate noise that varies in time and in character while a magnetic field-sensing sequence is applied to an electronic spin qubit in diamond, in direct contrast with less flexible pulse sequences.</span></div>
+</div>
+
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Composite-pulse magnetometry with a solid-state quantum sensor</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      <strong>C. D. Aiello</strong>, M. Hirose and P. Cappellaro
+      
+    </span>
+    </br>
+    <div style="padding-top: 2em;padding-bottom: 2em;"><span class="pull-right">
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="email"
+         href="mailto:?subject=Composite-pulse%20magnetometry%20with%20a%20solid-state%20quantum%20sensor&amp;body=https%3a%2f%2fweb.stanford.edu%2f~caiello%2fpublication%2fcomposite-pulse-magnetometry%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Composite-pulse%20magnetometry%20with%20a%20solid-state%20quantum%20sensor&amp;url=https%3a%2f%2fweb.stanford.edu%2f~caiello%2fpublication%2fcomposite-pulse-magnetometry%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fweb.stanford.edu%2f~caiello%2fpublication%2fcomposite-pulse-magnetometry%2f&amp;title=Composite-pulse%20magnetometry%20with%20a%20solid-state%20quantum%20sensor"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+   
+    
+  </ul>
+</div>
+
+
+    </span></div>
+
+    
+   
+    
+    
+    </br>
+    <div style="padding-bottom: 0em;"><p class="pub-abstract" itemprop="text">The sensitivity of quantum magnetometers is challenged by control errors and, especially in the solid state, by their short coherence times. Refocusing techniques can overcome these limitations and improve the sensitivity to periodic fields, but they come at the cost of reduced bandwidth and cannot be applied to sense static or aperiodic fields. </br> </br>Here we experimentally demonstrate that continuous driving of the sensor spin by a composite pulse known as rotary-echo yields a flexible magnetometry scheme, mitigating both driving power imperfections and decoherence. A suitable choice of rotary-echo parameters compensates for different scenarios of noise strength and origin. The method can be applied to nanoscale sensing in variable environments or to realize noise spectroscopy. </br></br>In a room-temperature implementation, based on a single electronic spin in diamond, composite-pulse magnetometry provides a tunable trade-off between sensitivities in the $\mu$THz$^{−1/2}$ range, comparable with those obtained with Ramsey spectroscopy, and coherence times approaching T$_1$. </br></p></div>
+    
+    </br>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Nature Communications <b>4</b> 1419</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            Jan 2013
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+<a class="btn btn-primary btn-outline" href="https://web.stanford.edu/~caiello/files/ncomms2375.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/1207.5868" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="http://dx.doi.org/10.1038/ncomms2375" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+     
+      &copy; 2018 Clarice D. Aiello. Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>, adapted from <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic</a>. 
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/~caiello/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
